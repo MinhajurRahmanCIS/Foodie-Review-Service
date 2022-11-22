@@ -2,12 +2,13 @@ import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import 'react-photo-view/dist/react-photo-view.css';
 import { PhotoProvider, PhotoView } from 'react-photo-view';
+import useTitle from '../../TitleView/useTitle';
 
 const Services = () => {
-    
+    useTitle("Service");
     const [services, setServices] = useState([]);
     useEffect(() => {
-        fetch('http://localhost:5000/services')
+        fetch('https://foodie-service-server.vercel.app/services')
             .then(res => res.json())
             .then(data => {
                 setServices(data)

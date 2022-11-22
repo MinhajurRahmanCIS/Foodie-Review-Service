@@ -1,8 +1,10 @@
 import React, { useContext } from 'react';
 import { Link, useLoaderData } from 'react-router-dom';
 import { AuthContext } from '../../context/AuthProvider/AuthProvider';
+import useTitle from '../../TitleView/useTitle';
 
 const Checkout = () => {
+    useTitle("Checkout")
     const { user } = useContext(AuthContext);
     const checkout = useLoaderData();
     const { _id, title, img, description, price } = checkout;
@@ -20,7 +22,7 @@ const Checkout = () => {
             customer: name, email, msg
         }
 
-        fetch('http://localhost:5000/reviews', {
+        fetch('https://foodie-service-server.vercel.app/reviews', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json',

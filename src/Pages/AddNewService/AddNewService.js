@@ -1,8 +1,9 @@
 import React from 'react';
 import { MdOutlineFoodBank } from 'react-icons/md';
 import { toast, ToastContainer } from 'react-toastify';
+import useTitle from '../../TitleView/useTitle';
 const AddNewService = () => {
-
+    useTitle("Add New Service")
     const handelAddService = event => {
         event.preventDefault();
         const form = event.target;
@@ -10,7 +11,6 @@ const AddNewService = () => {
         const img = form.img.value;
         const description = form.description.value;
         const price = form.price.value;
-        console.log(title, price, description, img)
         const service = {
             title,
             img,
@@ -18,7 +18,7 @@ const AddNewService = () => {
             price
         }
 
-        fetch('http://localhost:5000/services', {
+        fetch('https://foodie-service-server.vercel.app/services', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json',
