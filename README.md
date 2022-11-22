@@ -1,12 +1,11 @@
 # Created By Md. Minhajur Rahman
 
 ## Project Name : `Foodie Service`
-Project Deploy Site For Client side: https://foodie-service-client.web.app 
+Project Deploy Site For Client side: https://polite-kleicha-68f1ce.netlify.app/ \
 Project Deploy Site For Server side: https://foodie-service-server.vercel.app
 
 
-Project Repository Link For Client side: https://github.com/Porgramming-Hero-web-course/b6a11-service-review-client-side-RkzNew \
-Project Repository Link For Server side: https://github.com/Porgramming-Hero-web-course/b6a11-service-review-server-side-RkzNew
+Project Repository Link For Client side: https://github.com/MinhajurRahmanCIS/Foodie-Review-Service
 
 # Project Info
 This is a cloud kitchen Foodie Service Website.
